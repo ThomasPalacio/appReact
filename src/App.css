@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 
 .App {
   text-align: center;
@@ -58,22 +60,10 @@ a:hover{
 font-size: 16px;
 }
 
-/* ItemsListConteiner */
-.card{
- margin: 50px 200px; 
-}
-
-.card-header{
- font-size: 40px;
- font-family:Verdana, Geneva, Tahoma, sans-serif;
- font-weight: 800;
-}
-.card-title{
-font-weight: 700;
-font-size: 35px;
-}
-.card-text{
-  text-align:center;
-  font-size: 24px;
-  margin-bottom: 2rem;
+/* Inicio */
+.titleinicio{
+font-size: 50px;
+font-weight: 800;
+font-family: 'Playfair Display', serif;
+margin: 40px 100px;
 }
