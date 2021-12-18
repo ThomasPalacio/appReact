@@ -8,7 +8,7 @@ const ItemsListContainer = (props) => {
             <div>
             <h1 className='titleinicio'>{props.greeting}</h1>
             </div>
-            <ItemCount initial={1} />
+            <ItemCount initial={1} stock={5} />
         </div>
     )
 }
