@@ -1,10 +1,14 @@
 import React from 'react'
+import ItemCount from './ItemCount'
 
 
 const ItemsListContainer = (props) => {
     return (
-        <div class="card">
+        <div>
+            <div>
             <h1 className='titleinicio'>{props.greeting}</h1>
+            </div>
+            <ItemCount initial={1} />
         </div>
     )
 }

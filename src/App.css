@@ -67,3 +67,18 @@ font-weight: 800;
 font-family: 'Playfair Display', serif;
 margin: 40px 100px;
 }
+
+/* Contador */
+.containerContador{
+border: 2px black solid;
+width: fit-content;
+}
+.parrafoContador{
+padding: 10px;
+}
+.botonesContador{
+  color: white;
+  background-color: black;
+  border: none;
+  border-radius: 10px;
+}
