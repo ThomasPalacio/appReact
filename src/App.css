@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Pushster&family=Source+Sans+Pro&display=swap');
 
 .App {
   text-align: center;
 }
 
+/* Navbar */
 .nav-main {
   background-color: black;
   display: flex;
@@ -25,12 +27,32 @@
 ul {
   list-style: none;
 }
+
+
 .seccionesNav {
   cursor: pointer;
   padding: 1rem 1.7rem;
   text-transform: uppercase;
   font-size: 0.9rem;
   border-bottom: 3px transparent solid;
+}
+.botonProductosNav{
+color: white;
+text-decoration: none;
+background: black;
+text-transform: uppercase;
+font-size: 0.9rem;
+border: none;
+}
+
+.dropdown-menu{
+  color: white;
+  background: black;
+  text-transform: uppercase;
+}
+.links{
+  margin: 10px;
+  font-size: 13px;
 }
 a {
   color: white;
@@ -47,11 +69,13 @@ a:hover{
 
 .NombreMarca{
   margin-left: 10px;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 800;
   color: white;
+  font-size: 50px;
   text-decoration: none;
 }
+
 .numeroCart{
   font-family: 'Courier New', Courier, monospace;
   color:white;
@@ -61,20 +85,32 @@ font-size: 16px;
 }
 
 /* Inicio */
-.titleinicio{
+.home{
+  height: 100vh;
+  background-image: url(./assets/images/backgroundHome.jpg);
+  background-size:cover;
+  background-position:center;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+}
+.titleInicio {
+color: azure;
 font-size: 50px;
 font-weight: 800;
 font-family: 'Playfair Display', serif;
-margin: 40px 100px;
+}
+.subtitleInicio{
+color: rgb(141, 7, 7);
+font-size: 35px;
+font-weight: 800;
+font-family: 'Playfair Display', serif;
 }
 
 /* CONTADOR */
 .containerContador{
-border: 2px black solid;
+border: none;
 width: fit-content;
-padding: 20px 30px;
-background-color:  #c3cfe2 ;
-
+background-color:  white;
 }
 
 .nombreContador{
@@ -85,15 +121,15 @@ color: rgb(0, 0, 0);
 padding: 10px;
 }
 .numeroContador{
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   font-size: 20px;
 }
 .botonesContador{
   color: rgb(0, 0, 0);
   font-weight: 600;
-  padding: 5px;
+  padding: 5px 10px;
   background-color: rgb(255, 255, 255);
-  border: none;
+  border: 1px solid black;
   border-radius: 10px;
 }
 
@@ -104,12 +140,23 @@ font-size: 50px;
 font-family:'Times New Roman', Times, serif;
 font-weight: 800;
 }
+
+.listaProductos{
+  flex: 1;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  gap: 10px;
+  margin-top: 1.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  justify-content: space-around;
+}
 .card{
-width: 30rem;
+width: 250px;
 }
 .card-body{
 color: white;
-background-color: salmon;
+background-color: rgb(141, 7, 7);
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
 }
@@ -121,12 +168,30 @@ font-weight: 700;
   font-size: 25px;
 }
 .card-img-top{
-width: 30rem;
-height: 30rem;
+width: 250px;
+height: 300px;
 }
-.botonComprar{
+.botonDetails{
+  color: white;
   background-color: black;
   padding: 10px;
+  font-weight: 600;
   font-size: 16px ;
   border-radius: 20px;
+  border: none;
 }
+
+/* DETAIL */
+.containerDetail{
+ margin: 30px 40px;
+}
+.imgDetail{
+width: 400px;
+height: 500px;
+}
+
+.flex-col{
+  font-family: 'Source Sans Pro', sans-serif; 
+  font-weight: 800;
+}
+

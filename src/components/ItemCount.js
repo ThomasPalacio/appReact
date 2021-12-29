@@ -18,9 +18,6 @@ const ItemCount = (p) => {
 
     return (
         <div className='container containerContador'>
-            <div className='row'>
-                <h3 className='nombreContador'>Remera White</h3>
-            </div>
             <div className='row parrafoContador d-flex align-items-center justify-content-center'>
                 <div className='row'>
                     <div className='col-4'>
