@@ -16,7 +16,7 @@ stock
             <div className='col-6'>
               <img src={image} alt={`${id}-${name}`} className="imgDetail" />
             </div>
-            <div className='col-6'>
+            <div className='col-6 bodyDetail'>
                 <h1 className='nameDetail'>{name}</h1>
                 <h5 className='catDetail'> Categoria: {category}</h5>
                 <h5 className='catDetail'>{description}</h5>

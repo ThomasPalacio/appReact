@@ -190,6 +190,12 @@ width: 400px;
 height: 500px;
 }
 
+.bodyDetail{
+  text-align: start;
+}
+.nameDetail, .priceDetail{
+  text-align: center;
+}
 .flex-col{
   font-family: 'Source Sans Pro', sans-serif; 
   font-weight: 800;
