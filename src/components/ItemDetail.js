@@ -5,6 +5,7 @@ const ItemDetail =
 ({id,
 name,
 category,
+description,
 image,
 price,
 stock
@@ -18,6 +19,7 @@ stock
             <div className='col-6'>
                 <h1 className='nameDetail'>{name}</h1>
                 <h5 className='catDetail'> Categoria: {category}</h5>
+                <h5 className='catDetail'>{description}</h5>
                 <h2 className='priceDetail'>${price}</h2>
                 <ItemCount initial={1} stock={stock}/>
             </div>

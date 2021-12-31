@@ -1,8 +1,8 @@
 import React from 'react'
-import ItemCount from './ItemCount'
+
 import  {ItemList}  from './ItemList'
 import Data from '../data/Data'
-
+import Loader from '../assets/images/loader.gif'
 
 import { useEffect,useState } from 'react'
 import { useParams } from 'react-router-dom'
@@ -38,9 +38,9 @@ const ItemsListContainer = () => {
 
   
   return loading ? (
-    <h2 className='d-flex justify-content-center mt-5'>LOADING...</h2>
+    <img src={Loader}></img>
   ) : (
-        <div>
+        <div className='productos'>
             <ItemList items={items} />
         </div>
   )

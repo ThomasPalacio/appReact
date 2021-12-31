@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import  ItemDetail  from './ItemDetail';
 import  Data  from '../data/Data';
+import Loader from '../assets/images/loader.gif'
+
 import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {
@@ -29,7 +31,8 @@ const ItemDetailContainer = () => {
       .finally(() => setLoading(false));
   }, [itemId]);
 
-  return loading ? <h2 className='d-flex justify-content-center mt-5'>LOADING...</h2> : <ItemDetail {...product} />;
+  return loading ? <img src={Loader}></img> : 
+  <ItemDetail {...product} />;
 };
 
 export default ItemDetailContainer
