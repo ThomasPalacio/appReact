@@ -11,11 +11,7 @@ Hola 👋, Soy Thomas Palacio.
 🔸 Instalación
 
 1) Cloná el repositorio.
-<<<<<<< HEAD
-2) En la terminal,corré el comando: npm install
-=======
-2) En la terminal,corré el comando: npm install 
->>>>>>> a0af5bfc063969009bed50c5ea2598feab63a3af
+
 3) Para instalar todas las dependecias del proyecto, corré el comando: npm start
     
   
