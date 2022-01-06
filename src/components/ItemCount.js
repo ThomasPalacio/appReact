@@ -32,8 +32,8 @@ const ItemCount = (p) => {
                     
                 </div>
             </div>
-            <div className='row p-2'>
-                <button className='botonesContador'>Agregar al Carrito</button>
+            <div className='row p-2 '>
+                <button onClick={p.onAdd} className='botonesContador'>Agregar al Carrito</button>
             </div>
         </div>
     )

@@ -5,8 +5,10 @@ import Home from './components/Home'
 import ItemDetailContainer from './components/ItemDetailContainer';
 import Nosotros from './components/Nosotros';
 import Contacto from './components/Contacto';
+import Carrito from './components/Carrito';
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
                         <Route path="/product/:itemId" element={<ItemDetailContainer />} />
                         <Route path="/nosotros" element={<Nosotros />}/>
                         <Route path="/contacto" element={<Contacto />}/>
+                        <Route path="/carrito" element={<Carrito />}/>
                   </Routes>
            </BrowserRouter>
         </div>       

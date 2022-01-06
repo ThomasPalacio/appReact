@@ -1,15 +1,22 @@
 import React from 'react'
+import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import ItemCount from './ItemCount'
 
 const ItemDetail = 
-({id,
-name,
-category,
-description,
-image,
-price,
-stock
-}) => {
+({id,name,category,description,image,price,stock}) => {
+
+
+  const [added, setAdded] = useState(false)
+
+  const onAdd =(() =>{
+    setAdded(true)
+   })
+
+   useEffect(() => {
+     console.log(added);
+   }, [added])
+
     return (
         <div className="container containerDetail">
           <div className='row'>
@@ -21,7 +28,15 @@ stock
                 <h5 className='catDetail'> Categoria: {category}</h5>
                 <h5 className='catDetail'>{description}</h5>
                 <h2 className='priceDetail'>${price}</h2>
-                <ItemCount initial={1} stock={stock}/>
+                {!added && 
+                <ItemCount onAdd={onAdd} initial={1} stock={stock}/>
+                }
+                 {added &&
+                  <div className='d-flex align-items-center justify-content-center m-4'>
+                  <Link to="/carrito"><button className='botonesContador'>Terminar compra</button></Link>
+                  </div>
+                 }
+                
             </div>
           </div>
         
