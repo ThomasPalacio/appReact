@@ -161,26 +161,26 @@ font-weight: 800;
   margin-right: 1rem;
   justify-content: space-around;
 }
-.card{
+.cardItem{
 width: 250px;
 }
-.card-body{
+.bodyItem{
 color: white;
 background-color: rgb(141, 7, 7);
 font-family: 'Roboto', sans-serif;
 font-weight: 700;
+font-size: 25px;
 }
-.card-title{
+.titleItem{
   font-size: 40px;
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.card-body{
-  font-size: 25px;
-}
+
 .card-img-top{
 width: 250px;
 height: 300px;
 }
+
 .botonDetails{
   color: white;
   background-color: black;
@@ -270,4 +270,14 @@ text-transform: uppercase;
 font-weight: 800;
 color:   black;
 -webkit-text-stroke: 1px  white;
+}
+
+.cardCart{
+  height: 150px;
+  border: 1px solid black;
+  margin: 5px 10px;
+}
+.imgCart{
+  height: 145px;
+  width: 100px;
 }

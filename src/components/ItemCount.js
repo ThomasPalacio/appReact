@@ -33,7 +33,7 @@ const ItemCount = (p) => {
                 </div>
             </div>
             <div className='row p-2 '>
-                <button onClick={p.onAdd} className='botonesContador'>Agregar al Carrito</button>
+                <button onClick={() => { p.onAdd(); p.addHandler();}} className='botonesContador'>Agregar al Carrito</button>
             </div>
         </div>
     )

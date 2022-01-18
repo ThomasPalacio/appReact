@@ -1,21 +1,33 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+import { CartContext } from '../context/CartContext'
+
 import ItemCount from './ItemCount'
 
+
 const ItemDetail = 
-({id,name,category,description,image,price,stock}) => {
+(product) => {
 
+  const  {id,name,category,description,image,price,stock} =  product
 
+  const {addItem, itemIsInCart} = useContext(CartContext)
   const [added, setAdded] = useState(false)
 
-  const onAdd =(() =>{
+  const itemsIsInCart = itemIsInCart(id)
+
+  const addHandler = () => {
+    addItem( {id, name, image, price, quantity: 1} )
+}
+  
+ const onAdd =(() =>{
     setAdded(true)
    })
-
+ 
    useEffect(() => {
-     console.log(added);
-   }, [added])
+    console.log(added);
+  }, [added])
+
 
     return (
         <div className="container containerDetail">
@@ -28,8 +40,13 @@ const ItemDetail =
                 <h5 className='catDetail'> Categoria: {category}</h5>
                 <h5 className='catDetail'>{description}</h5>
                 <h2 className='priceDetail'>${price}</h2>
+                {itemsIsInCart ? 
+                <h4 className='d-flex align-items-center justify-content-center m-4'>Agregaste el producto al carrito</h4>
+                :
+                <span></span>
+                }
                 {!added && 
-                <ItemCount onAdd={onAdd} initial={1} stock={stock}/>
+                <ItemCount addHandler={addHandler} onAdd={onAdd}   initial={1} stock={stock}/>
                 }
                  {added &&
                   <div className='d-flex align-items-center justify-content-center m-4'>
